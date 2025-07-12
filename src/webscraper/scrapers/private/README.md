@@ -1,0 +1,1 @@
+This is where private web scraper classes went.

@@ -1,0 +1,17 @@
+# Virtual Python environment.
+venv/
+
+# General Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code
+.vscode
+
+# Local settings
+settings.json
+
+# Databases.
+db-data

@@ -1,0 +1,23 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_NAME=scanrus
+      - POSTGRES_USER=scanrus
+      - POSTGRES_PASSWORD=mydbpassword
+  app:
+    platform: "linux/amd64"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GROUPID: "1000"
+        USERID: "1000"
+    working_dir: /app
+    volumes:
+      - ./log:/app/log
+    image: scanrus-image

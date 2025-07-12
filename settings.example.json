@@ -1,0 +1,14 @@
+{
+    "debug": 1,
+    "logFile": "log/app.log",
+    "database": {
+        "host": "localhost",
+        "name": "scanrus",
+        "user": "root",
+        "pass": "",
+        "port": 5432
+    },
+    "parsers": [
+
+    ]
+}
