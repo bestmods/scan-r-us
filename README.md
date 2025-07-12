@@ -75,7 +75,7 @@ The parser object is used to initialize a specific web scraper.
 | `testMode` | bool | `false` | If enabled, doesn't update the Best Mods's API. |
 | `skipNullCategory` | bool | `true` | Whether to skip null categories. |
 | `logPagFailOutput` | bool | `true` | If true, logs the output of the webpage if it fails. Useful for debugging. |
-| `cleanupBanners` | `bool` | `true` | Removes mod image banners locally to save space. |
+| `cleanupBanners` | bool | `true` | Removes mod image banners locally to save space. |
 | `avoidIds` | string array | `[]` | A list of IDs to not add or update. |
 
 ### REST API Object
